@@ -1,4 +1,4 @@
-# HTML Generator
+# Data Mapper
 
 This Python script (`users.py`) is designed to generate an HTML file based on user data. It utilizes Flask to render an HTML template (`user_template.html`) with dynamically generated user data.
 
