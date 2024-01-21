@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0066cc;
+            margin-bottom: 120px; /* Triple the margin for more space */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 60px; /* Triple the margin for more space */
+        }
+
+        strong {
+            color: #0066cc;
+            display: inline-block;
+            width: 120px; /* Adjust as needed */
+        }
+
+        span {
+            margin-left: 90px; /* Approximately three times the current tabs */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>User Details</h2>
+        <ul>
+            <li><strong>Username:</strong><span>{{ user.username }}</span></li>
+            <li><strong>Email:</strong><span>{{ user.email }}</span></li>
+            <li><strong>Mobile Number:</strong><span>{{ user.mobile }}</span></li>
+            <!-- <li><strong>Country:</strong><span>{{ user.country }}</span></li> -->
+            <!-- <li><strong>Date of Birth:</strong><span>{{ user.dob }}</span></li> -->
+            <!-- <li><strong>Address:</strong><span>{{ user.address }}</span></li> -->
+            <!-- <li><strong>Username:</strong><span>JohnDoe</span></li>
+            <li><strong>Email:</strong><span>john.doe@example.com</span></li>
+            <li><strong>Mobile Number:</strong><span>1234567890</span></li>
+            <li><strong>Country:</strong><span>Not specified</span></li>
+            <li><strong>Date of Birth:</strong><span>Not specified</span></li>
+            <li><strong>Address:</strong><span>Not specified</span></li> -->
+        </ul>
+    </div>
+</body>
+</html>
