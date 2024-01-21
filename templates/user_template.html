@@ -54,10 +54,12 @@
     <div id="container">
         <h2>User Details</h2>
         <ul>
-            <li><strong>Username:</strong><span>{{ user.username }}</span></li>
-            <li><strong>Email:</strong><span>{{ user.email }}</span></li>
-            <li><strong>Mobile Number:</strong><span>{{ user.mobile }}</span></li>
-            <!-- <li><strong>Country:</strong><span>{{ user.country }}</span></li> -->
+            <!-- Inside the <ul> element -->
+            <li><strong>Username:</strong><span>{{ user.Username }}</span></li>
+            <li><strong>Email:</strong><span>{{ user.Email }}</span></li>
+            <li><strong>Mobile Number:</strong><span>{{ user["Mobile Number"] }}</span></li>
+
+                        <!-- <li><strong>Country:</strong><span>{{ user.country }}</span></li> -->
             <!-- <li><strong>Date of Birth:</strong><span>{{ user.dob }}</span></li> -->
             <!-- <li><strong>Address:</strong><span>{{ user.address }}</span></li> -->
             <!-- <li><strong>Username:</strong><span>JohnDoe</span></li>
