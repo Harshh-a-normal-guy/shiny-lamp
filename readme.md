@@ -1,6 +1,6 @@
-# HTML Generator
+# Data Mapper
 
-This Python script (`users.py`) is designed to generate an HTML file based on user data. It utilizes Flask to render an HTML template (`user_template.html`) with dynamically generated user data.
+This Python script (`users.py`) is designed to generate custom HTML  and PDf file based on user data. It utilizes Flask to render an HTML template (`user_template.html`) with dynamically generated user data.
 
 ## Usage
 
@@ -20,7 +20,7 @@ This Python script (`users.py`) is designed to generate an HTML file based on us
 
 ## Files
 
-- `users.py`: The main script that generates the HTML file.
+- `users.py`: The main script that generates the HTML and pdf file.
 - `user_template.html`: The HTML template that includes placeholders for user data.
 - `user_data_generated.py`: Contains sample user data used in the template.
 
