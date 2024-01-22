@@ -1,3 +1,9 @@
+import pandas as pd
+def csv_to_inputs(csv_path): # if we need csv file for input
+    df= pd.read_csv(csv_path)
+    input_values=pd.read_csv('Untitled spreadsheet - Sheet1.csv').columns.to_list()
+
+
 def map_values_to_keys(input_values):
     mapping_rules = {
         'Email': lambda x: 'email' if '@' in x and '.com' in x else None,
