@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <script>
+        function validateForm() {
+            // Validate Name
+            var nameInput = document.getElementById("name");
+            if (!/^[A-Z][a-zA-Z]{4,}$/.test(nameInput.value)) {
+                alert("Name should start with a capital letter and be at least 5 characters long.");
+                return false;
+            }
+
+            // Validate Mobile Number
+            var mobileInput = document.getElementById("mobile");
+            if (!/^\d{10}$/.test(mobileInput.value)) {
+                alert("Mobile number should be 10 digits.");
+                return false;
+            }
+
+            // Validate Email
+            var emailInput = document.getElementById("email");
+            if (!/^[\w-]+(\.[\w-]+)*@[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)*(\.[a-zA-Z]{2,})$/.test(emailInput.value)) {
+                alert("Invalid email address. It should contain '@' and end with '.com'.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>User Information</h2>
+    <form action="/submit_form" method="post" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
