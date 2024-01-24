@@ -31,17 +31,17 @@ def generate_html(users):
                 html_data = render_template('user_template.html', user=dict)
 
 
-    #         #     # Create a unique filename for each user
-            #     filename = f'custom_{i}.html'
+            #     # Create a unique filename for each user
+                filename = f'custom_{i}.html'
                 
-            #     with open(filename, 'w', encoding='utf-8') as file:
-            #         file.write(html_data)
+                with open(filename, 'w', encoding='utf-8') as file:
+                    file.write(html_data)
                 
-            #     print(f'HTML generated for user {i} successfully!')
+                print(f'HTML generated for user {i} successfully!')
                 
-            #     # Convert HTML to PDF
-            #     pdfkit.from_file(filename, f'custom_{i}.pdf')
-            #     print(f'PDF generated for user {i} successfully!')
+                # Convert HTML to PDF
+                pdfkit.from_file(filename, f'custom_{i}.pdf')
+                print(f'PDF generated for user {i} successfully!')
             except Exception as e:
                 print(f'Error generating HTML for user {i+1}: {e}')
 

@@ -1,0 +1,8 @@
+# Example EmailConfig.yml
+user: ""
+password: ""
+imap_url: imap.gmail.com
+mailbox: INBOX
+content: 
+  include_body: true  # Whether to include email body or not
+  max_body_length: 500  # Maximum number of characters to display for the body
